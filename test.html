@@ -1,18 +1,22 @@
 
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Анна Фото | Контакти</title>
+    <title>Ashade | Together Forever</title>
 
     <!-- CSS -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat%3A500%2C700%7CRoboto+Condensed:700%7CRoboto%3A700&display=swap" rel="stylesheet">
 	<link type="text/css" rel="stylesheet" href="css/line-awesome.css">
+	<link type="text/css" rel="stylesheet" href="css/photoswipe.css">
+	<link type="text/css" rel="stylesheet" href="css/default-skin/default-skin.css">
 	<link type="text/css" rel="stylesheet" href="css/style.css">
 	<link type="text/css" rel="stylesheet" href="css/responsive.css">
 
+    <script src="js/photoswipe-ui-default.min.js"></script>
+	<script src="js/photoswipe.min.js"></script>
 	<!-- Icon -->
 	<link rel="icon" href="img/favicon.png" sizes="32x32" />
 </head>
@@ -29,11 +33,17 @@
                 <nav class="ashade-nav">
                     <ul class="main-menu">
                         <li class="menu-item-has-children">
-                            <a href="index.html">Головна</a>
+                            <a href="#">Home</a>
+                            <ul class="sub-menu">
+                                <li><a href="index.html">Home Video</a></li>
+                                <li><a href="home02.html">Home Slider</a></li>
+                                <li><a href="home03.html">Home Static</a></li>
+                                <li><a href="maintenance.html">Maintenance</a></li>
+                            </ul>
                         </li>
 						<li class="menu-item-has-children">
-                            <a href="works.html">Портфоліо</a>
-                            <!-- <ul class="sub-menu">
+                            <a href="#">Works</a>
+                            <ul class="sub-menu">
                                 <li class="menu-item-has-children">
                                     <a href="#">Ribbon</a>
                                     <ul class="sub-menu">
@@ -74,16 +84,16 @@
                                         <li><a href="works-adjusted-4columns.html">4 Columns</a></li>
                                     </ul>
                                 </li>
-                            </ul> -->
+                            </ul>
                         </li>
 						<li class="menu-item-has-children">
-                            <a href="#">Печать</a>
-                            <!-- <ul class="sub-menu">
+                            <a href="#">Showcase</a>
+                            <ul class="sub-menu">
                                 <li class="menu-item-has-children">
                                     <a href="#">Grid</a>
                                     <ul class="sub-menu">
                                         <li><a href="gallery-grid-2columns.html">2 Columns</a></li>
-                                        <li><a href="gallery-grid-3columns.html">3 Columns</a></li>
+                                        <li class="current-menu-item"><a href="gallery-grid-3columns.html">3 Columns</a></li>
                                         <li><a href="gallery-grid-4columns.html">4 Columns</a></li>
                                     </ul>
                                 </li>
@@ -122,12 +132,18 @@
                                 <li><a href="gallery-justified.html">Justified</a></li>
                                 <li><a href="gallery-bricks-1x2.html">Bricks 1x2</a></li>
                                 <li><a href="gallery-bricks-2x3.html">Bricks 2x3</a></li>
-                            </ul> -->
+                            </ul>
                         </li>
                         <li class="menu-item-has-children">
-                            <a href="about.html">Про мене</a>
+                            <a href="#">Pages</a>
+                            <ul class="sub-menu">
+                                <li><a href="about.html">About Me</a></li>
+                                <li><a href="services.html">Services</a></li>
+                                <li><a href="testimonials.html">Testimonials</a></li>
+								<li><a href="typography.html">Typography</a></li>
+                            </ul>
                         </li>
-                        <li><a href="contacts.html">Контакти</a></li>
+                        <li><a href="contacts.html">Contacts</a></li>
                         <li>
 							<a href="#" class="ashade-aside-toggler">
 								<span class="ashade-aside-toggler__icon01"></span>
@@ -144,8 +160,8 @@
     <!-- Content -->
     <div class="ashade-page-title-wrap">
         <h1 class="ashade-page-title">
-            <span>Мої контакти</span>
-            Напишіть мені
+            <span>Love Story</span>
+            Together Forever
         </h1>
     </div>
 
@@ -154,65 +170,74 @@
 			<div class="ashade-content">
 				<section class="ashade-section">
 					<div class="ashade-row">
-                        <div class="ashade-col col-12">
-                            <p class="ashade-intro">Приємно познайомитися, друже! Мене звати Аня. Якщо у вас є якісь запитання, пропозиції або ви просто хочете забронювати фотосесію, сміливо скористайтеся контактною формою нижче. Давайте разом зробимо щось чудове!</p>
+						<div class="ashade-col col-12">
+							<p class="ashade-intro">This beautiful couple in love cannot imagine life without adventure and their beloved retro sports car. Amazing people, true feelings and really gorgeous car.</p>
 						</div>
 					</div>
 				</section>
 				<section class="ashade-section">
-					<div class="ashade-row">
-						<div class="ashade-col col-4">
-							<div class="ashade-contact-details">
-								<h4 class="ashade-contact-details__title">
-                                    <span>Мої контакти</span>
-                                    Напишіть мені
-                                </h4>
-                                <ul class="ashade-contact-details__list">
-                                    <!-- <li>
-                                        <i class="ashade-contact-icon la la-map-marker"></i>
-                                        1250 Welton St, Denver, CO 80204
-                                    </li> -->
-                                    <li>
-                                        <i class="ashade-contact-icon la la-phone"></i>
-                                        <a href="tel:+380990357916">+38 (099) 035 - 79 - 16</a>
-                                    </li>
-                                    <li>
-                                        <i class="ashade-contact-icon la la-envelope"></i>
-                                        <a href="mailto:a.shade@example.com">anna@example.com</a>
-                                    </li>
-                                    <li class="ashade-contact-socials">
-                                        <i class="ashade-contact-icon la la-share-alt"></i>
-                                        <a href="facebook.com" target="_blank">Fb</a>
-                                        <a href="vk.com" target="_blank">Vk</a>
-                                        <a href="instagram.com" target="_blank">In</a>
-                                        <a href="500px.com" target="_blank">Px</a>
-                                    </li>
-                                </ul>
-							</div><!-- .ashade-contact-details -->
-						</div><!-- .ashade-col -->
-						<div class="ashade-col col-8">
-                            <form action="mail.html" method="post" class="ashade-contact-form">
-                                <div class="ashade-row ashade-small-gap">
-                                    <div class="ashade-col col-4">
-                                        <input type="text" id="name" name="name" placeholder="Ваше Ім'я" required>
-                                    </div>
-                                    <div class="ashade-col col-4">
-                                        <input type="email" id="email" name="email" placeholder="Email" required>
-                                    </div>
-                                    <div class="ashade-col col-4">
-                                        <input type="tel" id="phone" name="phone" placeholder="Телефон" required>
-                                    </div>
-                                </div>
-                                <textarea name="message" id="message" placeholder="Ваше повідомлення" required></textarea>
-                                <div class="ashade-contact-form__footer">
-                                    <div class="ashade-contact-form__response"></div>
-                                    <div class="ashade-contact-form__submit">
-                                        <input type="submit" value="Відіслати">
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-					</div><!-- .ashade-row -->
+					<div class="ashade-grid ashade-grid-3cols">
+						<div class="ashade-gallery-item ashade-grid-item">
+							<a href="img/gallery/grid3/01.jpg" class="ashade-lightbox-link" data-size="1600x1280">
+								<img src="img/null.png" data-src="img/gallery/grid3/01.jpg" alt="Together Forever" class="lazy" width="1600" height="1280">
+							</a>
+						</div><!-- .ashade-gallery-item -->
+						<div class="ashade-gallery-item ashade-grid-item">
+							<a href="img/gallery/grid3/02.jpg" class="ashade-lightbox-link" data-size="1600x1280">
+								<img src="img/null.png" data-src="img/gallery/grid3/02.jpg" alt="Together Forever" class="lazy" width="1600" height="1280">
+							</a>
+						</div><!-- .ashade-gallery-item -->
+						<div class="ashade-gallery-item ashade-grid-item">
+							<a href="img/gallery/grid3/03.jpg" class="ashade-lightbox-link" data-size="1600x1280">
+								<img src="img/null.png" data-src="img/gallery/grid3/03.jpg" alt="Together Forever" class="lazy" width="1600" height="1280">
+							</a>
+						</div><!-- .ashade-gallery-item -->
+						<div class="ashade-gallery-item ashade-grid-item">
+							<a href="img/gallery/grid3/04.jpg" class="ashade-lightbox-link" data-size="1600x1280">
+								<img src="img/null.png" data-src="img/gallery/grid3/04.jpg" alt="Together Forever" class="lazy" width="1600" height="1280">
+							</a>
+						</div><!-- .ashade-gallery-item -->
+						<div class="ashade-gallery-item ashade-grid-item">
+							<a href="img/gallery/grid3/05.jpg" class="ashade-lightbox-link" data-size="1600x1280">
+								<img src="img/null.png" data-src="img/gallery/grid3/05.jpg" alt="Together Forever" class="lazy" width="1600" height="1280">
+							</a>
+						</div><!-- .ashade-gallery-item -->
+						<div class="ashade-gallery-item ashade-grid-item">
+							<a href="img/gallery/grid3/06.jpg" class="ashade-lightbox-link" data-size="1600x1280">
+								<img src="img/null.png" data-src="img/gallery/grid3/06.jpg" alt="Together Forever" class="lazy" width="1600" height="1280">
+							</a>
+						</div><!-- .ashade-gallery-item -->
+						<div class="ashade-gallery-item ashade-grid-item">
+							<a href="img/gallery/grid3/07.jpg" class="ashade-lightbox-link" data-size="1600x1280">
+								<img src="img/null.png" data-src="img/gallery/grid3/07.jpg" alt="Together Forever" class="lazy" width="1600" height="1280">
+							</a>
+						</div><!-- .ashade-gallery-item -->
+						<div class="ashade-gallery-item ashade-grid-item">
+							<a href="img/gallery/grid3/08.jpg" class="ashade-lightbox-link" data-size="1600x1280">
+								<img src="img/null.png" data-src="img/gallery/grid3/08.jpg" alt="Together Forever" class="lazy" width="1600" height="1280">
+							</a>
+						</div><!-- .ashade-gallery-item -->
+						<div class="ashade-gallery-item ashade-grid-item">
+							<a href="img/gallery/grid3/09.jpg" class="ashade-lightbox-link" data-size="1600x1280">
+								<img src="img/null.png" data-src="img/gallery/grid3/09.jpg" alt="Together Forever" class="lazy" width="1600" height="1280">
+							</a>
+						</div><!-- .ashade-gallery-item -->
+						<div class="ashade-gallery-item ashade-grid-item">
+							<a href="img/gallery/grid3/10.jpg" class="ashade-lightbox-link" data-size="1600x1280">
+								<img src="img/null.png" data-src="img/gallery/grid3/10.jpg" alt="Together Forever" class="lazy" width="1600" height="1280">
+							</a>
+						</div><!-- .ashade-gallery-item -->
+						<div class="ashade-gallery-item ashade-grid-item">
+							<a href="img/gallery/grid3/11.jpg" class="ashade-lightbox-link" data-size="1600x1280">
+								<img src="img/null.png" data-src="img/gallery/grid3/11.jpg" alt="Together Forever" class="lazy" width="1600" height="1280">
+							</a>
+						</div><!-- .ashade-gallery-item -->
+						<div class="ashade-gallery-item ashade-grid-item">
+							<a href="img/gallery/grid3/12.jpg" class="ashade-lightbox-link" data-size="1600x1280">
+								<img src="img/null.png" data-src="img/gallery/grid3/12.jpg" alt="Together Forever" class="lazy" width="1600" height="1280">
+							</a>
+						</div><!-- .ashade-gallery-item -->
+					</div>
 				</section>
 			</div><!-- .ashade-content -->
 			
@@ -234,63 +259,67 @@
 			</footer>
 		</div><!-- .ashade-content-scroll -->
 	</main>
+    
     <div class="ashade-to-top-wrap ashade-back-wrap">
         <div class="ashade-back is-to-top">
-            <span>Попернутися</span>
-            <span>Вверх</span>
+            <span>Back to</span>
+            <span>Top</span>
         </div>
     </div>
-    
+
     <!-- Aside Bar -->
     <aside id="ashade-aside">
-        <a href="#" class="ashade-aside-close">Закрити</a>
-     <div class="ashade-aside-inner">
-         <div class="ashade-aside-content">
-             <div class="ashade-widget ashade-widget--about">
-                 <div class="ashade-widget--about__head">
-                     <img src="img/general/owner-avatar.jpg" alt="Andrew Shade">
-                     <h5>
-                         
-                         <span>Анна</span>                            
-                         <span>Богдановська</span>
-                         Фотограф
-                     </h5>
-                 </div>
-                 <p>Приємно познайомитися, Друже! Мене звуть Анна Богдановська Фотографія - це моя пристрасть. Через об'єктив світ виглядає інакше, і я хотіла б показати вам цю різницю</p>
-                 <p class="align-right">
-                     <a href="about.html" class="ashade-learn-more">Більше</a>
-                 </p>
-             </div><!-- .ashade-widget -->
-                
-             <div class="ashade-widget ashade-widget--contacts">
-                 <h5 class="ashade-widget-title">
-                     Мої контакти						
-                 </h5>
-                 <ul class="ashade-contact-details__list">
-                     <li>
-                         <i class="ashade-contact-icon la la-phone"></i>
-                         <a href="tel:+380990357916">+38 (099) 035 - 79 - 16</a>
-                     </li>
-                     <li>
-                         <i class="ashade-contact-icon la la-envelope"></i>
-                         <a href="mailto:anna@example.com">anna@example.com</a>
-                     </li>
-                     <li class="ashade-contact-socials">
-                         <i class="ashade-contact-icon la la-share-alt"></i>
-                         <a href="facebook.com" target="_blank">Fb</a>
-                         <a href="vk.com" target="_blank">Vk</a>
-                         <a href="instagram.com" target="_blank">In</a>
-                         <a href="500px.com" target="_blank">Px</a>
-                     </li>
-                 </ul>
-                 <p class="align-right">
-                     <a href="contacts.html" class="ashade-learn-more">Зв'язатися</a>
-                 </p>
-             </div><!-- .ashade-widget -->
-                
-         </div><!-- .ashade-aside-content -->
-     </div><!-- .ashade-aside-inner -->
- </aside>
+       	<a href="#" class="ashade-aside-close">Close Sidebar</a>
+        <div class="ashade-aside-inner">
+        	<div class="ashade-aside-content">
+				<div class="ashade-widget ashade-widget--about">
+					<div class="ashade-widget--about__head">
+						<img src="img/general/owner-avatar.jpg" alt="Andrew Shade">
+						<h5>
+							<span>Photographer</span>
+							Andrew Shade
+						</h5>
+					</div>
+					<p>Nice to meet you, friend! My name is Andrew Shade. I am from Denver. Photography is my passion. Through the lens the world looks different and I would like to show you this difference.</p>
+					<p class="align-right">
+						<a href="about.html" class="ashade-learn-more">Learn More</a>
+					</p>
+				</div><!-- .ashade-widget -->
+       			
+				<div class="ashade-widget ashade-widget--contacts">
+					<h5 class="ashade-widget-title">
+						<span>My contacts and socials</span>
+						How to find me
+					</h5>
+					<ul class="ashade-contact-details__list">
+						<li>
+							<i class="ashade-contact-icon la la-map-marker"></i>
+							1250 Welton St, Denver, CO 80204
+						</li>
+						<li>
+							<i class="ashade-contact-icon la la-phone"></i>
+							<a href="tel:+11234567890">+1 (123) 456 - 78 - 90</a>
+						</li>
+						<li>
+							<i class="ashade-contact-icon la la-envelope"></i>
+							<a href="mailto:a.shade@example.com">a.shade@example.com</a>
+						</li>
+						<li class="ashade-contact-socials">
+							<i class="ashade-contact-icon la la-share-alt"></i>
+							<a href="facebook.com" target="_blank">Fb</a>
+							<a href="twitter.com" target="_blank">Tw</a>
+							<a href="instagram.com" target="_blank">In</a>
+							<a href="500px.com" target="_blank">Px</a>
+						</li>
+					</ul>
+					<p class="align-right">
+						<a href="contacts.html" class="ashade-learn-more">Get in touch</a>
+					</p>
+				</div><!-- .ashade-widget -->
+       			
+        	</div><!-- .ashade-aside-content -->
+        </div><!-- .ashade-aside-inner -->
+    </aside>
 
     <!-- UI Elements -->
     <div class="ashade-menu-overlay"></div>
@@ -301,10 +330,14 @@
     	<span class="ashade-cursor-close ashade-cursor-label">Close</span>
     	<span class="ashade-cursor-zoom ashade-cursor-label">Zoom</span>
     </div>
-	
+
     <!-- SCRIPTS -->
     <script src="js/jquery.min.js"></script>
+	<script src="js/masonry.min.js"></script>
     <script src="js/gsap.min.js"></script>
+    <script src="js/jquery.lazy.min.js"></script>
+   
+	
     <script src="js/core.js"></script>
 </body>
 </html>
