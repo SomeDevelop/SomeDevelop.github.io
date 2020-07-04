@@ -1242,8 +1242,8 @@ body:not(.has-to-top) .ashade-back-wrap .ashade-back.is-to-top span:last-child,
 
 
 
-.ashade-content-shown .main-menu li a{	   
-	color: rgba(0,0,0,.7);
+.ashade-content-shown nav.ashade-nav ul li a{	   
+	color: rgba(0,0,0,.7) !important;
 }
 footer#ashade-footer {
     position: relative;
