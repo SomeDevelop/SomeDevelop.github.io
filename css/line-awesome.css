@@ -33,7 +33,9 @@
       -moz-osx-font-smoothing: grayscale;
       -webkit-font-smoothing: antialiased;
       font-smoothing: antialiased;
+      color: #fff;
   }
+ 
   /* makes the font 33% larger relative to the icon container */
   .la-lg {
       font-size: 1.33333333em;

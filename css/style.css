@@ -74,7 +74,7 @@ html {
 }
 body {
     overflow-x: hidden;
-    background: #000000;
+    /* background: #000000; */
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     line-height: 28px;
@@ -101,7 +101,7 @@ body.has-spotlight:before {
     top: 0;
     width: 100vh;
     height: 100vh;
-    background: radial-gradient(ellipse at left top, #28282E 0%,#000000 70%);
+    background: radial-gradient(ellipse at left top, #23456733 0%,#fff 70%);
 }
 
 /* --- Overlays --- */
@@ -114,7 +114,7 @@ body.has-spotlight:before {
     width: 100%;
     height: 100%;
     z-index: 177;
-    background: rgba(0,0,0,0.85);
+    background: rgba(255,255,255,0.85);
     pointer-events: none;
     opacity: 0;
     transition: opacity 0.6s;
@@ -132,6 +132,38 @@ body.has-spotlight:before {
 .ashade-menu-fade .ashade-menu-overlay,
 .is-faded .ashade-home-block-overlay {
     opacity: 1;
+}
+
+.ashade-menu-fade nav.ashade-nav ul li a{
+	color: rgba(0,0,0,.7);
+	font-weight: 900;
+}
+
+.ashade-menu-fade nav.ashade-nav ul li.menu-item-has-children a:visited{
+	 /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+	
+}
+
+
+.ashade-menu-fade nav.ashade-nav ul.main-menu li.current-menu-parent > a,
+.ashade-menu-fade nav.ashade-nav ul.main-menu li.current-menu-item > a,
+.ashade-menu-fade nav.ashade-nav ul.main-menu li.current-menu-ancestor > a {
+    /* text-shadow: 0 0 2px #000 !important; */
+}
+
+.ashade-menu-fade nav.ashade-nav ul li a:hover{
+	color: grey !important;
+	text-decoration: underline;
+}
+.ashade-menu-fade nav.ashade-nav ul li a
+{
+	color: grey !important;
+}
+
+.ashade-menu-fade a.ashade-aside-toggler span{
+	background: #000;
 }
 
 /* --- Grid --- */
@@ -500,7 +532,8 @@ h1 span {
 h2 {
     font-size: 50px;
     line-height: 55px;
-    margin: 0 0 28px 0;
+	margin: 0 0 28px 0;
+	
 }
 .ashade-albums-slider .ashade-album-item__explore span,
 .ashade-home-link span:first-child,
@@ -581,8 +614,10 @@ a,
 a:hover,
 a:visited {
     text-decoration: none;
-    color: #fff;
+	color: rgba(0,0,0,.7);
+	
 }
+
 ol,
 ul {
 	padding: 0 0 0 17px;
@@ -683,7 +718,7 @@ input[type="submit"] {
     margin: 0;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
-    color: #ffffff;
+    /* color: #ffffff; */
     text-transform: uppercase;
     font-size: 14px;
     line-height: 16px;
@@ -693,7 +728,7 @@ input[type="submit"] {
 }   
 input:hover,
 textarea:hover {
-    background: rgba(0,0,0,0.5);
+    background: rgba(255,255,255,0.5);
     border-color: #5C5C60;
 }
 input::-webkit-input-placeholder {
@@ -833,7 +868,7 @@ a.ashade-aside-toggler span {
     border-radius: 1.5px;
     position: absolute;
     top: 13px;
-    background: #ffffff;
+	background: #fff;
     transform-origin: 50% 50%;
 }
 a.ashade-aside-toggler span:nth-child(1) {
@@ -859,7 +894,7 @@ a.ashade-aside-toggler span:nth-child(2):after {
     height: 2px;
     transition: transform 0.3s;
     transform-origin: 50% 50%;
-    background: #fff;
+    /* background: #fff; */
 }
 a.ashade-aside-toggler span:nth-child(2):before {
     transform: rotate(45deg) scaleX(1);
@@ -881,13 +916,16 @@ nav.ashade-nav ul li {
     margin: 0;
     list-style: none;
 }
+.ashade-home-template nav.ashade-nav ul li a{
+	color: #fff;
+}
 nav.ashade-nav ul li a {
     transition: color 0.3s;
-    color: rgba(255,255,255,0.5);
+    color: rgba(0,0,0,.7);
     font-size: 12px;
     line-height: 29px;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
+    font-weight: 800;
     text-transform: uppercase;
     display: block;
     letter-spacing: 0.6px;
@@ -962,6 +1000,14 @@ nav.ashade-nav ul.main-menu li.current-menu-ancestor > a {
     color: rgba(255,255,255,1);
 }
 
+a.ashade-learn-more{
+	color: #fff;
+}
+.ashade-menu-fade .menu-item-has-children a{
+	color: rgba(255,255,255,0.15);
+}
+
+
 
 /* 05. CONTENT
    ----------- */
@@ -1025,7 +1071,7 @@ nav.ashade-nav ul.main-menu li.current-menu-ancestor > a {
     content: '';
     width: 100%;
     height: 1px;
-    background: rgba(255,255,255,0.15);
+    background: rgba(0,0,0,0.35);
     position: absolute;
     left: 0;
     top: 23px;
@@ -1035,7 +1081,7 @@ nav.ashade-nav ul.main-menu li.current-menu-ancestor > a {
     display: block;
     padding-left: 100px;
     margin: 0;
-    color: rgba(255,255,255,0.5);
+    color: rgba(46, 45, 45, 0.5) !important;
     font-family: 'Roboto Condensed', sans-serif;
     transition: padding 0.5s, opacity 0.5s;
 	opacity: 0;
@@ -1097,7 +1143,7 @@ nav.ashade-nav ul.main-menu li.current-menu-ancestor > a {
     content: '';
     width: 100%;
     height: 1px;
-    background: rgba(255,255,255,0.15);
+    background: rgba(90, 70, 70, 0.35);
     position: absolute;
     left: 0;
     top: 21px;
@@ -1142,8 +1188,12 @@ nav.ashade-nav ul.main-menu li.current-menu-ancestor > a {
 .has-to-top .ashade-back-wrap.is-loaded .ashade-back.is-to-top span:last-child {
     margin: 0;
     color: rgba(255,255,255,0.5);
-    transform: translateX(0px);
+	transform: translateX(0px);
+	-webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgba(0, 0, 0, .3);
 }
+
 
 /* Hover State */
 .ashade-back-wrap.is-loaded .ashade-back.is-to-top:hover span:first-child,
@@ -1187,6 +1237,14 @@ body:not(.has-to-top) .ashade-back-wrap .ashade-back.is-to-top span:last-child,
 
 /* 06. FOOTER
    ---------- */
+
+
+
+
+
+.ashade-content-shown .main-menu li a{	   
+	color: rgba(0,0,0,.7);
+}
 footer#ashade-footer {
     position: relative;
     z-index: 5;
@@ -1216,12 +1274,22 @@ footer#ashade-footer {
     letter-spacing: 0.6px;
     padding: 25px 50px 26px 50px;
 }
+
+
+
+
 .ashade-footer-inner a {
-    transition: color 0.3s;
-    color: rgba(255, 255, 255, 0.5);
+	transition: color 0.3s;
+	color: rgba(0, 0, 0, 1);
+
+}
+
+.ashade-home-template .ashade-footer-inner a{
+	color: rgba(255, 255, 255, 0.5);
+
 }
 .ashade-footer-inner a:hover {
-    color: rgba(255, 255, 255, 1);
+    text-decoration: underline;
 }
 .ashade-footer-inner ul {
     padding: 0;
@@ -1240,6 +1308,13 @@ footer#ashade-footer {
 .ashade-footer__copyright {
     text-transform: uppercase;
     cursor: default;
+}
+.ashade-footer__copyright{
+	color: rgba(0,0,0,.7);
+}
+.ashade-home-template .ashade-footer__copyright{
+	color: rgba(255, 255, 255, 0.5);
+	
 }
 
 /* 07. ASIDE BAR
@@ -1313,7 +1388,7 @@ aside#ashade-aside {
 	transform: rotate(-45deg);
 }
 .ashade-aside-close:hover {
-	color: #ffffff;
+	color: #000;
 }
 .ashade-aside-close:hover:before,
 .ashade-aside-close:hover:after {
@@ -1401,7 +1476,7 @@ a.ashade-learn-more:hover:after {
 /* 08. HOME TEMPLATE
    ----------------- */
 .ashade-home-background {
-	opacity: 0.75;
+	opacity: 1;
 	transition: left 0.5s;
 }
 .ashade-home-background video {
@@ -1450,7 +1525,7 @@ a.ashade-learn-more:hover:after {
     content: '';
     width: 100%;
     height: 1px;
-    background: rgba(255,255,255,0.15);
+    background: rgba(255,255,255,0.35);
     position: absolute;
     left: 0;
     top: 21px;
@@ -1648,6 +1723,7 @@ body.ashade-aside-shown .ashade-home-link-wrap {
 }
 .ashade-album-item .ashade-album-item__image {
 	overflow: hidden;
+	box-shadow: 5px 1px 10px black;
 }
 .ashade-album-item img {
 	width: 100%;
@@ -1697,6 +1773,10 @@ body.ashade-aside-shown .ashade-home-link-wrap {
 .ashade-albums-template--carousel .ashade-albums-carousel-wrap div.ashade-album-item {
 	display: inline-block;
 	transition: opacity 0.5s, transform 0.5s;
+	
+}
+.ashade-album-item__inner{
+	box-shadow: 5px 5px 5px;
 }
 .ashade-albums-template--carousel .ashade-albums-carousel.is-hovered div.ashade-album-item {
 	opacity: 0.25;
@@ -1845,14 +1925,14 @@ body.ashade-aside-shown .ashade-home-link-wrap {
 .ashade-albums-carousel-progress {
 	width: 33.33vw;
 	height: 1px;
-	background: #313133;
+	background: rgba(0,0,0,.1);
 	border-radius: 1px;
 	position: absolute;
 	left: 33.33vw;
 	top: calc(75vh + 100px);
 }
 .ashade-albums-carousel-progress > div {
-	background: #ffffff;
+	background: #7889b9;
 	width: 0;
 	height: 2px;
 	border-radius: 1px;
@@ -2217,7 +2297,8 @@ p.ashade-intro {
     transition: color 0.3s;
 }
 .ashade-contact-details__list a:hover {
-    color: #ffffff;
+	/* color: #ffffff; */
+	text-decoration: underline;
 }
 .ashade-contact-icon {
     width: 40px;
@@ -2231,6 +2312,7 @@ p.ashade-intro {
 	position: absolute;
 	left: 0;
 	top: 0;
+	color: #5C5C60;
 }
 .ashade-contact-socials a {
     display: inline-block;

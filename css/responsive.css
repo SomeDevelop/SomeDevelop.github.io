@@ -562,7 +562,7 @@ body section.ashade-section.hide-on-desktop {
 		top: 0;
 		width: 384px;
 		height: 100%;
-		background: #000000;
+		background: rgba(255,255,255,1);
 		display: block;
 		z-index: 333;
 		pointer-events: none;
@@ -628,11 +628,14 @@ body section.ashade-section.hide-on-desktop {
 		display: none!important;
 	}
 	nav.ashade-mobile-menu ul.main-menu li a {
-		color: rgba(255,255,255,0.5);
+		color: rgba(0,0,0,.7);
 		display: block;
+
 	}
 	nav.ashade-mobile-menu ul.main-menu > li > a {
 		margin-bottom: 10px;
+		text-shadow: 2px 2px 3px rgba(0,0,0,.3);
+		color: black;
 	}
 	nav.ashade-mobile-menu ul.main-menu li.current-menu-parent > a,
 	nav.ashade-mobile-menu ul.main-menu li.current-menu-item > a,
@@ -659,12 +662,12 @@ body section.ashade-section.hide-on-desktop {
 		position: absolute;
 		right: 0;
 		top: 0;
-		color: rgba(255, 255, 255, 0.5);
+		/* color: rgba(255, 255, 255, 0.5); */
 		font-size: 24px;
 		line-height: 30px;
 		font-family: "LineAwesome";
 		transition: color 0.3s;
-		color: #fff;
+		color: #000;
 		content: '\f191';
 		text-align: right;
 	}
@@ -681,6 +684,10 @@ body section.ashade-section.hide-on-desktop {
 	.ashade-mobile-menu-shown header#ashade-header {
 		pointer-events: none;
 		transform: translateX(-192px);
+	}
+
+	a.ashade-aside-toggler span{
+		background: #fff;
 	}
 	
 	/* --- Contact Form --- */

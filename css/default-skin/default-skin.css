@@ -529,7 +529,7 @@ a.pswp__share--download:hover {
 /* New Styles */
 .pswp-video-wrapper,
 img.pswp__img {
-	border: 5px solid #000;
+	/* border: 5px solid #000; */
 	box-shadow: 0 0 15px hsla(0, 0%, 0%, .8);
 }
 
