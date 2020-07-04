@@ -859,7 +859,7 @@ ashade.init = function() {
 				}
 			});
 			gsap.to('.ashade-page-background', {
-				opacity: 0.75,
+				opacity: 1,
 				scale: 1,
 				duration: 1,
 				delay: 1,
