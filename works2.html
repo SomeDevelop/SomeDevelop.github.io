@@ -7,14 +7,44 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Ashade | Albums Ribbon - Medium</title>
 
-    <!-- CSS -->
+	<!-- CSS -->
+	<link rel="stylesheet" href="css/books/main.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat%3A500%2C700%7CRoboto+Condensed:700%7CRoboto%3A700&display=swap" rel="stylesheet">
 	<link type="text/css" rel="stylesheet" href="css/line-awesome.css">
 	<link type="text/css" rel="stylesheet" href="css/style.css">
 	<link type="text/css" rel="stylesheet" href="css/responsive.css">
 
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+	<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/148866/velocity.min.js'></script>
+	
+	<script type="text/javascript" src="js/books/jquery-ui.min.js"></script> 
+	<script type="text/javascript" src="js/books/jquery-ui-1.8.20.custom.min.js"></script>
+    <script type="text/javascript" src="js/books/modernizr.2.5.3.min.js"></script>
+    <script type="text/javascript" src="js/books/lib/hash.js"></script>
+
 	<!-- Icon -->
 	<link rel="icon" href="img/favicon.png" sizes="32x32" />
+	<script>
+        $(function() {
+            $('#toggle-summary').click(function() {
+                 // Set the effect type
+                var effect = 'slide';
+                // Set the options for the effect type chosen
+                var options = { 
+                    direction: 'right' 
+                };
+                // Set the duration (default: 400 milliseconds)
+                var duration = 500;
+                $('.toggle').toggle(effect, options, duration);
+                
+                
+                //COLOR BUTTON ACTIVE
+                $(this).toggleClass('active-toggle');
+                
+                
+            });
+        });
+    </script>
 </head>
 <body class="has-spotlight ashade-albums-template ashade-albums-template--carousel">
     <!-- Header -->
@@ -54,87 +84,12 @@
                                     <a href="gallery2.html">галерея2</a>
                                     
                                 </li>
-                                <!-- <li class="menu-item-has-children">
-                                    <a href="#">Slider</a>
-                                    <ul class="sub-menu">
-                                        <li><a href="works-slider-parallax.html">Parallax Slider</a></li>
-                                        <li><a href="works-slider-simple.html">Simple Slider</a></li>
-                                        <li><a href="works-slider-fade.html">Fade Slider</a></li>
-                                    </ul>
-                                </li>
-                                <li class="menu-item-has-children">
-                                    <a href="#">Grid</a>
-                                    <ul class="sub-menu">
-                                        <li><a href="works-grid-2columns.html">2 Columns</a></li>
-                                        <li><a href="works-grid-3columns.html">3 Columns</a></li>
-                                        <li><a href="works-grid-4columns.html">4 Columns</a></li>
-                                    </ul>
-                                </li>
-                                <li class="menu-item-has-children">
-                                    <a href="#">Masonry</a>
-                                    <ul class="sub-menu">
-                                        <li><a href="works-masonry-2columns.html">2 Columns</a></li>
-                                        <li><a href="works-masonry-3columns.html">3 Columns</a></li>
-                                        <li><a href="works-masonry-4columns.html">4 Columns</a></li>
-                                    </ul>
-                                </li>
-                                <li class="menu-item-has-children">
-                                    <a href="#">Adjusted</a>
-                                    <ul class="sub-menu">
-                                        <li><a href="works-adjusted-2columns.html">2 Columns</a></li>
-                                        <li><a href="works-adjusted-3columns.html">3 Columns</a></li>
-                                        <li><a href="works-adjusted-4columns.html">4 Columns</a></li>
-                                    </ul>
-                                </li> -->
+                                
                             </ul>
                         </li>
                         <li class="menu-item-has-children">
                             <a href="#">Печать</a>
-                            <!-- <ul class="sub-menu">
-                                <li class="menu-item-has-children">
-                                    <a href="#">Grid</a>
-                                    <ul class="sub-menu">
-                                        <li><a href="gallery-grid-2columns.html">2 Columns</a></li>
-                                        <li><a href="gallery-grid-3columns.html">3 Columns</a></li>
-                                        <li><a href="gallery-grid-4columns.html">4 Columns</a></li>
-                                    </ul>
-                                </li>
-                                <li class="menu-item-has-children">
-                                    <a href="#">Masonry</a>
-                                    <ul class="sub-menu">
-                                        <li><a href="gallery-masonry-2columns.html">2 Columns</a></li>
-                                        <li><a href="gallery-masonry-3columns.html">3 Columns</a></li>
-                                        <li><a href="gallery-masonry-4columns.html">4 Columns</a></li>
-                                    </ul>
-                                </li>
-                                <li class="menu-item-has-children">
-                                    <a href="#">Adjusted</a>
-                                    <ul class="sub-menu">
-                                        <li><a href="gallery-adjusted-2columns.html">2 Columns</a></li>
-                                        <li><a href="gallery-adjusted-3columns.html">3 Columns</a></li>
-                                        <li><a href="gallery-adjusted-4columns.html">4 Columns</a></li>
-                                    </ul>
-                                </li>
-                                <li class="menu-item-has-children">
-                                    <a href="#">Ribbon</a>
-                                    <ul class="sub-menu">
-                                        <li><a href="gallery-ribbon-large.html">Ribbon Large</a></li>
-                                        <li><a href="gallery-ribbon-medium.html">Ribbon Medium</a></li>
-                                        <li><a href="gallery-ribbon-vertical.html">Ribbon Vertical</a></li>
-                                    </ul>
-                                </li>
-                                <li class="menu-item-has-children">
-                                    <a href="#">Slider</a>
-                                    <ul class="sub-menu">
-                                        <li><a href="gallery-slider-parallax.html">Parallax Slider</a></li>
-                                        <li><a href="gallery-slider-simple.html">Simple Slider</a></li>
-                                        <li><a href="gallery-slider-fade.html">Fade Slider</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="gallery-justified.html">Justified</a></li>
-                                <li><a href="gallery-bricks-1x2.html">Bricks 1x2</a></li>
-                                <li><a href="gallery-bricks-2x3.html">Bricks 2x3</a></li>
-                            </ul> -->
+                            
                         </li>
                         <li class="menu-item-has-children">
                             <a href="about.html">Про мене</a>
@@ -153,11 +108,12 @@
         </div>
     </header>
 
-    <!-- Content -->
+	<!-- Content -->
+	<section class="compute-science">
 	<div class="ashade-albums-carousel-wrap">
 		<div class="ashade-albums-carousel is-medium" id="albums_carousel">
 			<div class="ashade-album-item">
-				<div class="ashade-album-item__inner">
+				<div class="ashade-album-item__inner consectetu-section-action">
 					<img src="img/albums/carousel/album01.jpg" alt="My Special Day" width="1000" height="1200">
 					<div class="ashade-album-item__overlay"></div>
 					<div class="ashade-album-item__title">
@@ -166,7 +122,10 @@
 							My Special Day
 						</h2>
 					</div>
-					<a href="gallery.html" class="ashade-button">Explore</a>
+					
+						<a href="#" class="ashade-button btn" data-type="modal-trigger">Explore</a>
+						<span class="consectetu-section-bg"></span>
+					
 				</div>
 			</div><!-- .ashade-album-item -->
 			<div class="ashade-album-item">
@@ -195,105 +154,449 @@
 					<a href="gallery.html" class="ashade-button">Explore</a>
 				</div>
 			</div><!-- .ashade-album-item -->
-			<div class="ashade-album-item">
-				<div class="ashade-album-item__inner">
-					<img src="img/albums/carousel/album04.jpg" alt="Sunset Nature" width="1143" height="1200">
-					<div class="ashade-album-item__overlay"></div>
-					<div class="ashade-album-item__title">
-						<h2>
-							<span>Nature Photos</span>
-							Sunset Nature
-						</h2>
-					</div>
-					<a href="gallery.html" class="ashade-button">Explore</a>
-				</div>
-			</div><!-- .ashade-album-item -->
-			<div class="ashade-album-item">
-				<div class="ashade-album-item__inner">
-					<img src="img/albums/carousel/album05.jpg" alt="Girl on Farm" width="1500" height="1200">
-					<div class="ashade-album-item__overlay"></div>
-					<div class="ashade-album-item__title">
-						<h2>
-							<span>Personal Session</span>
-							Girl on Farm
-						</h2>
-					</div>
-					<a href="gallery.html" class="ashade-button">Explore</a>
-				</div>
-			</div><!-- .ashade-album-item -->
-			<div class="ashade-album-item">
-				<div class="ashade-album-item__inner">
-					<img src="img/albums/carousel/album06.jpg" alt="City Tour" width="1500" height="1200">
-					<div class="ashade-album-item__overlay"></div>
-					<div class="ashade-album-item__title">
-						<h2>
-							<span>Travel Photos</span>
-							City Tour
-						</h2>
-					</div>
-					<a href="gallery.html" class="ashade-button">Explore</a>
-				</div>
-			</div><!-- .ashade-album-item -->
-			<div class="ashade-album-item">
-				<div class="ashade-album-item__inner">
-					<img src="img/albums/carousel/album07.jpg" alt="Colors of Nature" width="1500" height="1200">
-					<div class="ashade-album-item__overlay"></div>
-					<div class="ashade-album-item__title">
-						<h2>
-							<span>Nature Photos</span>
-							Colors of Nature
-						</h2>
-					</div>
-					<a href="gallery.html" class="ashade-button">Explore</a>
-				</div>
-			</div><!-- .ashade-album-item -->
 			
-			<div class="ashade-album-item">
-				<div class="ashade-album-item__inner">
-					<img src="img/albums/carousel/album09.jpg" alt="Abandoned" width="1143" height="1200">
-					<div class="ashade-album-item__overlay"></div>
-					<div class="ashade-album-item__title">
-						<h2>
-							<span>Travel Photos</span>
-							Abandoned
-						</h2>
-					</div>
-					<a href="gallery.html" class="ashade-button">Explore</a>
-				</div>
-			</div><!-- .ashade-album-item -->
-			<div class="ashade-album-item">
-				<div class="ashade-album-item__inner">
-					<img src="img/albums/carousel/album10.jpg" alt="Let's Play" width="1000" height="1200">
-					<div class="ashade-album-item__overlay"></div>
-					<div class="ashade-album-item__title">
-						<h2>
-							<span>Personal Session</span>
-							Let's Play
-						</h2>
-					</div>
-					<a href="gallery.html" class="ashade-button">Explore</a>
-				</div>
-			</div><!-- .ashade-album-item -->
-			<div class="ashade-album-item">
-				<div class="ashade-album-item__inner">
-					<img src="img/albums/carousel/album11.jpg" alt="True Love" width="1500" height="1200">
-					<div class="ashade-album-item__overlay"></div>
-					<div class="ashade-album-item__title">
-						<h2>
-							<span>Love Story</span>
-							True Love
-						</h2>
-					</div>
-					<a href="gallery.html" class="ashade-button">Explore</a>
-				</div>
-			</div><!-- .ashade-album-item -->
 			
 		</div><!-- .ashade-albums-carousel -->
 		<div class="ashade-albums-carousel-progress">
 			<div class="ashade-albums-carousel-progress__bar"></div>
 		</div>
 	</div><!-- .ashade-albums-carousel-wrap -->
-    
+    <div class="consectetu-section">
+		<div class="consectetu-section-content">
+			<div id="canvas">
+				<div class='book-header'>
+					<!-- TITLE DOC -->
+					<h2>LA BRESSE INFOS - N°322 - MAI 2015</h2>
+				   
+					<!-- TOGGLE SUMMARY -->
+					<div id='toggle-summary'></div>
+					
+					<!-- PDF VIEWVER -->
+					<a href='pages/LaBresseInfosN322.pdf' target="_blank">
+						<div id='pdf-view'></div>
+					</a>
+					
+					<!-- PDF DOWNLOAD -->
+					<a href='pages/LaBresseInfosN322.pdf' download='PDF'>
+						<div id='pdf-download'></div>
+					</a>
+					
+			
+					<!-- OTHERS BUTTONS -->
+					
+					<div ignore="1" class="previous-button previous-icon"></div>
+					<div ignore="1" class="next-button next-icon"></div>
+				</div>
+			
+				 <!-- TOGGLE SUMMARY -->
+				<div class='toggle summary'>
+					<p>Шкільна книга для 4 класу</p>
+				</div>
+			
+				<div class="magazine-viewport">
+					<div class="container">
+						<div class="magazine">
+							<!-- Next button -->
+				<!--			<div ignore="1" class="next-button"></div>-->
+							<!-- Previous button -->
+				<!--			<div ignore="1" class="previous-button"></div>-->
+						</div>
+					</div>
+					<div class="bottom">
+						<div id="slider-bar" class="turnjs-slider">
+							<div id="slider"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<script type="text/javascript">
+			
+			function loadApp() {
+			
+				 $('#canvas').fadeIn(1000);
+			
+				 var flipbook = $('.magazine');
+			
+				 // Check if the CSS was already loaded
+				
+				if (flipbook.width()==0 || flipbook.height()==0) {
+					setTimeout(loadApp, 10);
+					return;
+				}
+				
+				// Create the flipbook
+			
+				flipbook.turn({
+						
+						// Magazine width
+			
+						width: 1020, //922,
+			
+						// Magazine height
+			
+						height: 700, //600,
+			
+						// Duration in millisecond
+			
+						duration: 1000,
+			
+						// Enables gradients
+			
+						gradients: true,
+						
+						// Auto center this flipbook
+			
+						autoCenter: true,
+			
+						// Elevation from the edge of the flipbook when turning a page
+			
+						elevation: 50,
+			
+						// The number of pages
+			
+						pages: 24,
+			
+						// Events
+			
+						when: {
+							turning: function(event, page, view) {
+								
+								var book = $(this),
+								currentPage = book.turn('page'),
+								pages = book.turn('pages');
+						
+								// Update the current URI
+			
+								Hash.go('page/' + page).update();
+			
+								// Show and hide navigation buttons
+			
+								disableControls(page);
+			
+							},
+			
+							turned: function(event, page, view) {
+			
+								disableControls(page);
+			
+								$(this).turn('center');
+			
+								$('#slider').slider('value', getViewNumber($(this), page));
+			
+								if (page==1) { 
+									$(this).turn('peel', 'br');
+								}
+			
+							},
+			
+							missing: function (event, pages) {
+			
+								// Add pages that aren't in the magazine
+			
+								for (var i = 0; i < pages.length; i++)
+									addPage(pages[i], $(this));
+			
+							}
+						}
+			
+				});
+			
+				// Zoom.js
+			
+				$('.magazine-viewport').zoom({
+					flipbook: $('.magazine'),
+			
+					max: function() { 
+						
+						return largeMagazineWidth()/$('.magazine').width();
+			
+					}, 
+			
+					when: {
+						swipeLeft: function() {
+			
+							$(this).zoom('flipbook').turn('next');
+			
+						},
+			
+						swipeRight: function() {
+							
+							$(this).zoom('flipbook').turn('previous');
+			
+						},
+			
+						resize: function(event, scale, page, pageElement) {
+			
+							if (scale==1)
+								loadSmallPage(page, pageElement);
+							else
+								loadLargePage(page, pageElement);
+			
+						},
+			
+						zoomIn: function () {
+			
+							$('#slider-bar').hide();
+							$('.made').hide();
+							$('.magazine').removeClass('animated').addClass('zoom-in');
+							$('.zoom-icon').removeClass('zoom-icon-in').addClass('zoom-icon-out');
+							
+							if (!window.escTip && !$.isTouch) {
+								escTip = true;
+			
+								$('<div />', {'class': 'exit-message'}).
+									html('<div>Press ESC to exit</div>').
+										appendTo($('body')).
+										delay(2000).
+										animate({opacity:0}, 500, function() {
+											$(this).remove();
+										});
+							}
+						},
+			
+						zoomOut: function () {
+			
+							$('#slider-bar').fadeIn();
+							$('.exit-message').hide();
+							$('.made').fadeIn();
+							$('.zoom-icon').removeClass('zoom-icon-out').addClass('zoom-icon-in');
+			
+							setTimeout(function(){
+								$('.magazine').addClass('animated').removeClass('zoom-in');
+								resizeViewport();
+							}, 0);
+			
+						}
+					}
+				});
+				
+				
+				// Summary
+				
+				$('.summary').click(function(event) {
+					
+					var page;
+			
+					if (event.target && (page=/page-([0-9]+)/.exec($(event.target).attr('class'))) ) {
+					
+						$('.magazine').turn('page', page[1]);
+						console.log(page);
+						$('.toggle').toggle('slide', 'up', 500);
+					}
+				});
+				
+				
+				
+			
+				// Zoom event
+			
+				if ($.isTouch)
+					$('.magazine-viewport').bind('zoom.doubleTap', zoomTo);
+				else
+					$('.magazine-viewport').bind('zoom.tap', zoomTo);
+			
+			
+				// Using arrow keys to turn the page
+			
+				$(document).keydown(function(e){
+			
+					var previous = 37, next = 39, esc = 27;
+			
+					switch (e.keyCode) {
+						case previous:
+			
+							// left arrow
+							$('.magazine').turn('previous');
+							e.preventDefault();
+			
+						break;
+						case next:
+			
+							//right arrow
+							$('.magazine').turn('next');
+							e.preventDefault();
+			
+						break;
+						case esc:
+							
+							$('.magazine-viewport').zoom('zoomOut');	
+							e.preventDefault();
+			
+						break;
+					}
+				});
+			
+				// URIs - Format #/page/1 
+			
+				Hash.on('^page\/([0-9]*)$', {
+					yep: function(path, parts) {
+						var page = parts[1];
+			
+						if (page!==undefined) {
+							if ($('.magazine').turn('is'))
+								$('.magazine').turn('page', page);
+						}
+			
+					},
+					nop: function(path) {
+			
+						if ($('.magazine').turn('is'))
+							$('.magazine').turn('page', 1);
+					}
+				});
+			
+			
+				$(window).resize(function() {
+					resizeViewport();
+				}).bind('orientationchange', function() {
+					resizeViewport();
+				});
+			
+				// Regions
+			
+				if ($.isTouch) {
+					$('.magazine').bind('touchstart', regionClick);
+				} else {
+					$('.magazine').click(regionClick);
+				}
+			
+				// Events for the next button
+			
+				$('.next-button').bind($.mouseEvents.over, function() {
+					
+					$(this).addClass('next-button-hover');
+			
+				}).bind($.mouseEvents.out, function() {
+					
+					$(this).removeClass('next-button-hover');
+			
+				}).bind($.mouseEvents.down, function() {
+					
+					$(this).addClass('next-button-down');
+			
+				}).bind($.mouseEvents.up, function() {
+					
+					$(this).removeClass('next-button-down');
+			
+				}).click(function() {
+					
+					$('.magazine').turn('next');
+			
+				});
+			
+				// Events for the next button
+				
+				$('.previous-button').bind($.mouseEvents.over, function() {
+					
+					$(this).addClass('previous-button-hover');
+			
+				}).bind($.mouseEvents.out, function() {
+					
+					$(this).removeClass('previous-button-hover');
+			
+				}).bind($.mouseEvents.down, function() {
+					
+					$(this).addClass('previous-button-down');
+			
+				}).bind($.mouseEvents.up, function() {
+					
+					$(this).removeClass('previous-button-down');
+			
+				}).click(function() {
+					
+					$('.magazine').turn('previous');
+			
+				});
+			
+			
+				// Slider
+			
+				$( "#slider" ).slider({
+					min: 1,
+					max: numberOfViews(flipbook),
+			
+					start: function(event, ui) {
+			
+						if (!window._thumbPreview) {
+							_thumbPreview = $('<div />', {'class': 'thumbnail'}).html('<div></div>');
+							setPreview(ui.value);
+							_thumbPreview.appendTo($(ui.handle));
+						} else
+							setPreview(ui.value);
+			
+						moveBar(false);
+			
+					},
+			
+					slide: function(event, ui) {
+			
+						setPreview(ui.value);
+			
+					},
+			
+					stop: function() {
+			
+						if (window._thumbPreview)
+							_thumbPreview.removeClass('show');
+						
+						$('.magazine').turn('page', Math.max(1, $(this).slider('value')*2 - 2));
+			
+					}
+				});
+			
+				resizeViewport();
+			
+				$('.magazine').addClass('animated');
+			
+			}
+			
+			// Zoom icon
+			
+			 $('.zoom-icon').bind('mouseover', function() { 
+				 
+				 if ($(this).hasClass('zoom-icon-in'))
+					 $(this).addClass('zoom-icon-in-hover');
+			
+				 if ($(this).hasClass('zoom-icon-out'))
+					 $(this).addClass('zoom-icon-out-hover');
+			 
+			 }).bind('mouseout', function() { 
+				 
+				  if ($(this).hasClass('zoom-icon-in'))
+					 $(this).removeClass('zoom-icon-in-hover');
+				 
+				 if ($(this).hasClass('zoom-icon-out'))
+					 $(this).removeClass('zoom-icon-out-hover');
+			
+			 }).bind('click', function() {
+			
+				 if ($(this).hasClass('zoom-icon-in'))
+					 $('.magazine-viewport').zoom('zoomIn');
+				 else if ($(this).hasClass('zoom-icon-out'))	
+					$('.magazine-viewport').zoom('zoomOut');
+			
+			 });
+			
+			 $('#canvas').hide();
+			
+			
+			// Load the HTML4 version if there's not CSS transform
+			
+			yepnope({
+				test : Modernizr.csstransforms,
+				yep: ['js/books/lib/turn.min.js'],
+				nope: ['js/books/lib/turn.html4.min.js', 'css/books/jquery.ui.html4.css'],
+				both: ['js/books/lib/zoom.min.js', 'css/books/jquery.ui.css', 'js/books/magazine.js', 'css/books/magazine.css', 'css/books/style.css'],
+				complete: loadApp
+			});
+			
+			</script>
+		</div>
+	</div>
+	<a href="#" class="consectetu-section-close">закрыть</a>
+
+
 	<!-- Footer -->
 	<footer id="ashade-footer">
 		<div class="ashade-footer-inner">
@@ -371,11 +674,13 @@
     	<span class="ashade-cursor-close ashade-cursor-label">Close</span>
     	<span class="ashade-cursor-zoom ashade-cursor-label">Zoom</span>
     </div>
-
+	</section>
+	
     <!-- SCRIPTS -->
-    <script src="js/jquery.min.js"></script>
+    
     <script src="js/gsap.min.js"></script>
     <script src="js/core.js"></script>
-    <script src="js/ashade-ribbon.js"></script>
+	<script src="js/ashade-ribbon.js"></script>
+	<script src="js/books/main.js"></script>
 </body>
 </html>
