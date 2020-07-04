@@ -72,10 +72,7 @@
                                     <a href="works3.html">Портфоліо2</a>
                                     
                                 </li>
-                                <li class="menu-item-has-children">
-                                    <a href="works2.html">Портфоліо3</a>
-                                    
-                                </li>
+                                
                                 <li class="menu-item-has-children">
                                     <a href="gallery.html">галерея1</a>
                                     
@@ -88,7 +85,7 @@
                             </ul>
                         </li>
                         <li class="menu-item-has-children">
-                            <a href="#">Печать</a>
+                            <a href="works2.html">Книги</a>
                             
                         </li>
                         <li class="menu-item-has-children">
@@ -128,32 +125,7 @@
 					
 				</div>
 			</div><!-- .ashade-album-item -->
-			<div class="ashade-album-item">
-				<div class="ashade-album-item__inner">
-					<img src="img/albums/carousel/album02.jpg" alt="Harley Davidson" width="1500" height="1200">
-					<div class="ashade-album-item__overlay"></div>
-					<div class="ashade-album-item__title">
-						<h2>
-							<span>Commercial Photos</span>
-							Harley Davidson
-						</h2>
-					</div>
-					<a href="gallery.html" class="ashade-button">Explore</a>
-				</div>
-			</div><!-- .ashade-album-item -->
-			<div class="ashade-album-item">
-				<div class="ashade-album-item__inner">
-					<img src="img/albums/carousel/album03.jpg" alt="Together Forever" width="1000" height="1200">
-					<div class="ashade-album-item__overlay"></div>
-					<div class="ashade-album-item__title">
-						<h2>
-							<span>Love Story</span>
-							Together Forever
-						</h2>
-					</div>
-					<a href="gallery.html" class="ashade-button">Explore</a>
-				</div>
-			</div><!-- .ashade-album-item -->
+			
 			
 			
 		</div><!-- .ashade-albums-carousel -->
@@ -255,26 +227,26 @@
 			
 						// The number of pages
 			
-						pages: 24,
+						pages: 8,
 			
 						// Events
 			
 						when: {
-							turning: function(event, page, view) {
+							// turning: function(event, page, view) {
 								
-								var book = $(this),
-								currentPage = book.turn('page'),
-								pages = book.turn('pages');
+							// 	var book = $(this),
+							// 	currentPage = book.turn('page'),
+							// 	pages = book.turn('pages');
 						
-								// Update the current URI
+							// 	// Update the current URI
 			
-								Hash.go('page/' + page).update();
+							// 	Hash.go('page/' + page).update();
 			
-								// Show and hide navigation buttons
+							// 	// Show and hide navigation buttons
 			
-								disableControls(page);
+							// 	disableControls(page);
 			
-							},
+							// },
 			
 							turned: function(event, page, view) {
 			
