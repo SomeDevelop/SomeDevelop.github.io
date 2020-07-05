@@ -157,7 +157,7 @@
     height: 50px;
     width: 50px;
     border-radius: 50%;
-    background: rgba(0, 0, 0, 0.3) url(https://webdevtrick.com/wp-content/uploads/close-icon.svg) no-repeat center center;
+    background: rgba(0, 0, 0, 0.3) url(close-icon.svg) no-repeat center center;
     /* image replacement */
     overflow: hidden;
     text-indent: 100%;
