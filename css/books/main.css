@@ -1,7 +1,7 @@
 .compute-science {
-    padding: 2em 5%;
-    /* text-align: center;
-    background-color: #ff4747; */
+    /* padding: 2em 5%; */
+    text-align: center; 
+    /* background-color: #ff4747;  */
   }
   .compute-science p {
     margin: 2em 0;
@@ -12,7 +12,7 @@
   }
   @media only screen and (min-width: 768px) {
     .compute-science {
-    padding: 4em 10%;
+    /* padding: 4em 10%; */
     }
     .compute-science p {
     font-size: 1.8rem;
@@ -21,7 +21,7 @@
   }
   @media only screen and (min-width: 1170px) {
     .compute-science {
-    padding: 4em 20%;
+    /* padding: 4em 20%; */
     }
   }
   
@@ -65,7 +65,7 @@
     margin: 2em 0;
   }
   .modal-is-visible .consectetu-section {
-    z-index: 1000;
+    z-index: 10000;
     visibility: visible;
     opacity: 1;
     pointer-events: auto;
@@ -122,8 +122,8 @@
   }
   .consectetu-section-action .consectetu-section-bg {
     position: absolute;
-    z-index: 1000;
-    left: 50%;
+    z-index: 10000;
+    /* left: 50%; */
     top: 0;
     width: 4em;
     border-radius: 50%;
@@ -145,13 +145,14 @@
   }
   .consectetu-section-action .consectetu-section-bg.is-visible {
     opacity: 1;
+    z-index: 99999;
     visibility: visible;
   }
   
   .consectetu-section-close {
     position: fixed;
-    z-index: 1000;
-    top: 20px;
+    z-index: 10000;
+    top: 50px;
     right: 5%;
     height: 50px;
     width: 50px;
@@ -191,7 +192,7 @@
     -ms-transform: scale(1);
     -o-transform: scale(1);
     transform: scale(1);
-    z-index: 1000;
+    z-index: 10000;
   }
   @media only screen and (min-width: 768px) {
     .consectetu-section-close {
